@@ -1,0 +1,17 @@
+{
+    "accuracy": 0.82125,
+    "fake_precision": 0.8978328173374613,
+    "fake_recall": 0.725,
+    "fake_f1": 0.8022130013831258,
+    "confusion_matrix": {
+        "actual_fake_pred_fake": 290,
+        "actual_fake_pred_real": 110,
+        "actual_real_pred_fake": 33,
+        "actual_real_pred_real": 367
+    },
+    "train_samples": 3600,
+    "validation_samples": 400,
+    "test_samples": 800,
+    "epochs": 3,
+    "seed": 42
+}

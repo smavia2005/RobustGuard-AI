@@ -1,0 +1,63 @@
+{
+  "dataset": "ASVspoof2019 LA - local shard 0",
+  "unused_samples": 100,
+  "counts": {
+    "Real": 50,
+    "Fake": 50
+  },
+  "baseline": {
+    "threshold": 0.5,
+    "samples": 100,
+    "accuracy": 0.77,
+    "balanced_accuracy": 0.77,
+    "precision_fake": 0.6956521739130435,
+    "recall_fake": 0.96,
+    "recall_real": 0.58,
+    "f1_fake": 0.8067226890756303,
+    "false_positives": 21,
+    "false_negatives": 2,
+    "real_correct": 29,
+    "fake_correct": 48,
+    "real_total": 50,
+    "fake_total": 50,
+    "confusion_matrix": [
+      [
+        48,
+        2
+      ],
+      [
+        21,
+        29
+      ]
+    ]
+  },
+  "calibrated": {
+    "threshold": 0.9,
+    "samples": 100,
+    "accuracy": 0.92,
+    "balanced_accuracy": 0.9199999999999999,
+    "precision_fake": 0.9565217391304348,
+    "recall_fake": 0.88,
+    "recall_real": 0.96,
+    "f1_fake": 0.9166666666666666,
+    "false_positives": 2,
+    "false_negatives": 6,
+    "real_correct": 48,
+    "fake_correct": 44,
+    "real_total": 50,
+    "fake_total": 50,
+    "confusion_matrix": [
+      [
+        44,
+        6
+      ],
+      [
+        2,
+        48
+      ]
+    ]
+  },
+  "recommended_threshold": 0.5,
+  "improved": false,
+  "notes": "Previously evaluated sample IDs were excluded. This is an unused-sample holdout within the same dataset shard, not a separate external dataset. Model scores are not calibrated probabilities."
+}

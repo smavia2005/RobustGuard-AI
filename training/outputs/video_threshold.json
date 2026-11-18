@@ -1,0 +1,12 @@
+{
+    "selected_threshold": 0.775,
+    "default_threshold": 0.5,
+    "calibration_pairs": 36,
+    "comparison_pairs": 16,
+    "comparison_balanced_accuracy_before": 0.625,
+    "comparison_balanced_accuracy_after": 0.5625,
+    "comparison_false_positives_before": 11,
+    "comparison_false_positives_after": 10,
+    "improved_on_comparison_set": false,
+    "note": "Exploratory threshold selection on SDFVD. This dataset was previously evaluated. Independent external validation is still needed."
+}

@@ -1,0 +1,22 @@
+{
+  "dataset": "ASVspoof 2019 LA, local shard 0",
+  "samples": 400,
+  "real_samples": 200,
+  "fake_samples": 200,
+  "accuracy": 0.8025,
+  "balanced_accuracy": 0.8025,
+  "precision_fake": 0.7232472324723247,
+  "recall_fake": 0.98,
+  "recall_real": 0.625,
+  "f1_fake": 0.832271762208068,
+  "confusion_matrix": [
+    [
+      196,
+      4
+    ],
+    [
+      75,
+      125
+    ]
+  ]
+}

@@ -1,0 +1,26 @@
+{
+    "accuracy": 0.9784375,
+    "precision_ai": 0.9841872232764073,
+    "recall_ai": 0.9725,
+    "f1_ai": 0.9783087079534738,
+    "confusion_matrix": [
+        [
+            1575,
+            25
+        ],
+        [
+            44,
+            1556
+        ]
+    ],
+    "training_samples": 11200,
+    "validation_samples": 1600,
+    "test_samples": 3200,
+    "question_groups": 8000,
+    "seed": 42,
+    "model": "TF-IDF + Logistic Regression",
+    "labels": [
+        "Human",
+        "AI Generated"
+    ]
+}

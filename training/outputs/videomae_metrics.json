@@ -1,0 +1,32 @@
+{
+  "model": "VideoMAE + YuNet",
+  "dataset": "SDFVD",
+  "total_expected": 106,
+  "successful_videos": 104,
+  "failed_videos": 2,
+  "accuracy": 0.5096153846153846,
+  "balanced_accuracy": 0.5096153846153847,
+  "precision": 0.5052631578947369,
+  "recall": 0.9230769230769231,
+  "f1": 0.6530612244897959,
+  "confusion_matrix": [
+    [
+      48,
+      4
+    ],
+    [
+      47,
+      5
+    ]
+  ],
+  "real_correct": 5,
+  "real_wrong": 47,
+  "fake_correct": 48,
+  "fake_missed": 4,
+  "limitations": [
+    "Evaluation on SDFVD only",
+    "Pretrained model may have different training data",
+    "Missing-face frames reuse detected crops",
+    "Not a general-purpose authenticity guarantee"
+  ]
+}

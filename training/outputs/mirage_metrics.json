@@ -1,0 +1,23 @@
+{
+    "model": "Mirage SigLIP2",
+    "dataset": "CIFAKE official test subset",
+    "seed": 42,
+    "samples": 1000,
+    "fake_samples": 500,
+    "real_samples": 500,
+    "accuracy": 0.524,
+    "precision_fake": 0.630435,
+    "recall_fake": 0.116,
+    "f1_fake": 0.195946,
+    "confusion_matrix": {
+        "true_positive": 58,
+        "false_negative": 442,
+        "false_positive": 34,
+        "true_negative": 466
+    },
+    "limitations": [
+        "CIFAKE images are low resolution.",
+        "Results may not represent modern generators.",
+        "Training overlap with Mirage is unverified."
+    ]
+}

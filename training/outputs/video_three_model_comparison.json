@@ -1,0 +1,79 @@
+{
+  "dataset": "SDFVD",
+  "common_test_videos": 26,
+  "real_test_videos": 13,
+  "fake_test_videos": 13,
+  "ranking": [
+    {
+      "model": "Transfer Learning",
+      "sample_count": 26,
+      "accuracy": 0.6538461538461539,
+      "balanced_accuracy": 0.6538461538461539,
+      "precision_fake": 0.6428571428571429,
+      "recall_fake": 0.6923076923076923,
+      "f1_fake": 0.6666666666666666,
+      "real_correct": 8,
+      "real_wrong": 5,
+      "fake_correct": 9,
+      "fake_missed": 4,
+      "confusion_matrix": [
+        [
+          9,
+          4
+        ],
+        [
+          5,
+          8
+        ]
+      ]
+    },
+    {
+      "model": "Face ViT + YuNet",
+      "sample_count": 26,
+      "accuracy": 0.6538461538461539,
+      "balanced_accuracy": 0.6538461538461539,
+      "precision_fake": 0.6,
+      "recall_fake": 0.9230769230769231,
+      "f1_fake": 0.7272727272727273,
+      "real_correct": 5,
+      "real_wrong": 8,
+      "fake_correct": 12,
+      "fake_missed": 1,
+      "confusion_matrix": [
+        [
+          12,
+          1
+        ],
+        [
+          8,
+          5
+        ]
+      ]
+    },
+    {
+      "model": "VideoMAE + YuNet",
+      "sample_count": 26,
+      "accuracy": 0.5,
+      "balanced_accuracy": 0.5,
+      "precision_fake": 0.5,
+      "recall_fake": 1.0,
+      "f1_fake": 0.6666666666666666,
+      "real_correct": 0,
+      "real_wrong": 13,
+      "fake_correct": 13,
+      "fake_missed": 0,
+      "confusion_matrix": [
+        [
+          13,
+          0
+        ],
+        [
+          13,
+          0
+        ]
+      ]
+    }
+  ],
+  "top_model_on_this_set": "Transfer Learning",
+  "note": "Exploratory comparison using the transfer model's existing held-out test videos. Selecting a final model based on this test set introduces selection bias. Independent external validation is required."
+}

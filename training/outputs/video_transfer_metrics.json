@@ -1,0 +1,45 @@
+{
+  "model": "Frozen Face ViT embeddings + PCA + Logistic Regression",
+  "dataset": "SDFVD",
+  "training_videos": 78,
+  "testing_videos": 26,
+  "valid_pairs": 52,
+  "failed_count": 2,
+  "test_pair_ids": [
+    4,
+    6,
+    9,
+    14,
+    15,
+    19,
+    21,
+    28,
+    34,
+    43,
+    45,
+    49,
+    52
+  ],
+  "accuracy": 0.6538461538461539,
+  "precision_fake": 0.6428571428571429,
+  "recall_fake": 0.6923076923076923,
+  "f1_fake": 0.6666666666666666,
+  "confusion_matrix": [
+    [
+      9,
+      4
+    ],
+    [
+      5,
+      8
+    ]
+  ],
+  "cv_balanced_accuracy": 0.7435897435897436,
+  "limitations": [
+    "Small paired dataset.",
+    "Frozen image-model features.",
+    "One held-out test split.",
+    "No explicit temporal modelling.",
+    "Not validated on independent video sources."
+  ]
+}
